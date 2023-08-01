@@ -13,7 +13,7 @@ const TaskHeader: FC<ITaskHeader> = (
     return (
         <Box
             display='flex'
-            justifyContent='space-around'
+            justifyContent='space-between'
             width='100%'
             mb={3}
         >
