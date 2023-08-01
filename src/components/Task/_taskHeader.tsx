@@ -8,14 +8,14 @@ const TaskHeader: FC<ITaskHeader> = (
     props
 ): ReactElement => {
 
-    const { title = 'default title', date = new Date() } = props
+    const { title = 'default title', date = new Date() } = props;
 
     return (
         <Box
             display='flex'
             justifyContent='space-around'
             width='100%'
-            mb={4}
+            mb={3}
         >
             <Box>
                 <Typography variant='h6'>{title}</Typography>

@@ -1,6 +1,7 @@
 import React, { FC, ReactElement } from 'react';
 import { Box } from '@mui/material';
 import TaskHeader from './_taskHeader';
+import TaskDescription from './_taskDescription';
 
 const Task: FC = (props): ReactElement => {
     return (
@@ -19,9 +20,8 @@ const Task: FC = (props): ReactElement => {
                 borderColor: 'error.light'
             }}
         >
-            <TaskHeader/>
-            description
-            footer
+            <TaskHeader />
+            <TaskDescription />
         </Box>
     )
 }
