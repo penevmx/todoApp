@@ -1,6 +1,7 @@
 import React, { FC, ReactElement } from 'react'
 import { Grid, Box } from '@mui/material';
 import { format } from 'date-fns';
+import TaskCounter from '../TaskCounter/TaskCounter';
 
 const TaskArea: FC = (): ReactElement => {
     return (
@@ -20,9 +21,9 @@ const TaskArea: FC = (): ReactElement => {
                     xs={12} // at small devices ще окупира 12 колони
                     mb={8}
                 >
-                    <Box>task counter</Box>
-                    <Box>task counter</Box>
-                    <Box>task counter</Box>
+                    <TaskCounter/>
+                    <TaskCounter/>
+                    <TaskCounter/>
                 </Grid>
 
                 <Grid
