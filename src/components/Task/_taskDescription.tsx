@@ -9,8 +9,8 @@ const TaskDescription: FC<ITaskDescription> = (
 
     const { description = 'default text' } = props;
     return (
-        <Box>
-            <Typography>{description}</Typography>
+        <Box >
+            <Typography sx={{ wordBreak: "break-word" }}>{description}</Typography>
         </Box>
     )
 }

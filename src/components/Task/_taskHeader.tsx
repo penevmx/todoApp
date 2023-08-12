@@ -4,9 +4,9 @@ import { ITaskHeader } from './interfaces/ITaskHeader';
 import { format } from 'date-fns';
 import PropTypes from 'prop-types';
 
-const TaskHeader: FC<ITaskHeader> = (
-    props
-): ReactElement => {
+const TaskHeader = (
+    props: ITaskHeader
+) => {
 
     const { title = 'default title', date = new Date() } = props;
 

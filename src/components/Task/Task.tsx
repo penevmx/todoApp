@@ -21,7 +21,10 @@ const Task: FC<ITask> = (
         status = Status.completed,
         onStatusChange = (e) => { console.log(e) },
         onClick = (e) => { console.log(e) },
+        id,
     } = props;
+
+
 
     return (
         <Box
@@ -32,7 +35,6 @@ const Task: FC<ITask> = (
             mb={4}
             p={2}
             sx={{
-                width: '100%',
                 backgroundColor: 'background.paper',
                 borderRadius: '8px',
                 border: '1px solid',
@@ -41,7 +43,11 @@ const Task: FC<ITask> = (
         >
             <TaskHeader title={title} date={date} />
             <TaskDescription description={description} />
-            <TaskFooter onStatusChange={onStatusChange} onClick={onClick} />
+            <TaskFooter
+                id={id}
+                status={status}
+                onStatusChange={onStatusChange}
+                onClick={onClick} />
         </Box>
     )
 }
