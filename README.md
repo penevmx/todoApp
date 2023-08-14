@@ -5,9 +5,8 @@ A simple TODO list application built with TypeScript.
 ## Table of Contents
 
 - [Features](#features)
-- [Usage](#usage)
+- [Installation](#Installation)
 - [Backend](#backend)
-- [Frontend](#frontend)
 
 
 
@@ -59,3 +58,9 @@ To get your TODO List App up and running, follow these simple steps:
     ```
 
 Now your TODO List App frontend is installed and ready to be used.
+
+## Backend
+
+```
+https://github.com/penevmx/todo-api
+```
