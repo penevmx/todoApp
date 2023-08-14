@@ -12,7 +12,7 @@ export default function ComposeContext(
 
     return <>
         {
-            components.reduceRight((acc, Comp: any) => {
+            components.reduceRight((acc, Comp) => {
                 return <Comp>{acc}</Comp>
             }, children)
         }
